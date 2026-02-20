@@ -1,0 +1,20 @@
+How to run auto dealership simulation with your agent:
+
+1) In step mode:
+	in one terminal:
+		cd ./auto-dealership
+		.venv/bin/python main.py --reset --days 104 --seed 42 --disable-workers new_cars --step
+	in second terminal
+		cd ./newcar_agent
+		.venv/bin/python agent.py
+
+2) In live mode (year every 10 seconds)
+	in one terminal:
+		cd ./auto-dealership
+		.venv/bin/python main.py --reset --days 104 --seed 42 --disable-workers new_cars --delay 10
+	in second terminal
+		cd ./newcar_agent
+		.venv/bin/python agent.py
+
+
+

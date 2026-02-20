@@ -1,0 +1,15 @@
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+
+# Runtime files (generated at runtime)
+agent_state.json
+agent_log.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
