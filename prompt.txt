@@ -1,0 +1,15 @@
+I want you to help me build an AI agent using LLMs to monitor a car dealership dealer management system (DMS) and determine when to order more cars.  The agent should run every 3 days after the start and read from DMS what cars have been sold since it last bought cars days.  If more than 1 car has been sold since last ordered cars, then select cars from the cars database that are similar make, model, year with minimum sales price similar to the ones sold.  Use the LLM to determine which cars in the database would be the best to buy and replace sold ones with in DMS inventory.  After putting them in inventory make debit entries in the ERP to account for purchasing these cars.  
+
+The agent should run and then monitor the simulation_state.json file every few seconds to see of the current_date has changed.  If it has changed it should run.  The agent should only interface with the car dealership databases: sim_cars.db, crm.db dms.db ems.db erp.db lms.db lss.db and not any of the simulation databases or log files.
+
+Use openai LLM API interface.  write agent using python with a virtual environment
+All databases are SQLite and stored in : /home/paul/code/auto_sim/auto_dealership/data
+Read this file describing how to integrate into this simulation:  /home/paul/code/auto_sim/auto_dealership/docs/agent_developer_guide.md
+
+review the documentation and ask me any clarifying questions you have, potential issues with the agent and ideas for improving the agent.
+
+Plan the agent and create report for me to review before proceeding
+
+
+
+ 
